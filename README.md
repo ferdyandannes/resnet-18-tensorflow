@@ -17,7 +17,7 @@ A TensorFlow implementation of ResNet-18(https://arxiv.org/abs/1512.03385)
 # Download the ResNet-18 torch checkpoint
 wget https://d2j0dndfm35trm.cloudfront.net/resnet-18.t7
 # Convert into tensorflow checkpoint
-python extract_torch_t7.py
+python3 extract_torch_t7.py
 ```
 1. Modify `train_scratch.sh`(training from scratch) or `train.sh`(finetune pretrained weights) to have valid values of following arguments
   - `train_dataset`, `train_image_root`, `val_dataset`, `val_image_root`: Path to the list file of train/val dataset and to the root
